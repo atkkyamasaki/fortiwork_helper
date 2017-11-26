@@ -1,10 +1,19 @@
 // 各要素の取得、変数の定義
-var summary = 'body > table:nth-child(7) > tbody > tr:nth-child(15) > td:nth-child(2)';
 var category = 'body > table:nth-child(7) > tbody > tr:nth-child(3) > td:nth-child(2)';
 var dateSubmitted = 'body > table:nth-child(7) > tbody > tr:nth-child(3) > td:nth-child(5)';
-var status = 'body > table:nth-child(7) > tbody > tr:nth-child(11) > td:nth-child(2)';
-var earliestBuildNumber = 'body > table:nth-child(7) > tbody > tr:nth-child(14) > td:nth-child(2)';
-var reportedVersion = 'body > table:nth-child(7) > tbody > tr:nth-child(13) > td:nth-child(2)';
+
+var reproducedBy = 'body > table:nth-child(7) > tbody > tr:nth-child(9) > td.category';
+if ($(reproducedBy).text().indexOf('Reproduced By') != -1) {
+	var summary = 'body > table:nth-child(7) > tbody > tr:nth-child(15) > td:nth-child(2)';
+	var status = 'body > table:nth-child(7) > tbody > tr:nth-child(11) > td:nth-child(2)';
+	var earliestBuildNumber = 'body > table:nth-child(7) > tbody > tr:nth-child(14) > td:nth-child(2)';
+	var reportedVersion = 'body > table:nth-child(7) > tbody > tr:nth-child(13) > td:nth-child(2)';	
+} else {
+	var summary = 'body > table:nth-child(7) > tbody > tr:nth-child(14) > td:nth-child(2)';
+	var status = 'body > table:nth-child(7) > tbody > tr:nth-child(10) > td:nth-child(2)';
+	var earliestBuildNumber = 'body > table:nth-child(7) > tbody > tr:nth-child(13) > td:nth-child(2)';
+	var reportedVersion = 'body > table:nth-child(7) > tbody > tr:nth-child(12) > td:nth-child(2)';	
+}
 
 var bugDetail = 'body > table:nth-child(7) > tbody > tr:nth-child(1) > td.form-title';
 var bugNote ='#bugnotes';
