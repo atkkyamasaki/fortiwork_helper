@@ -6,6 +6,7 @@ var durationFooter;
 var unclosedFilter;
 var closedMessageColor;
 var closedSummary;
+var mantisPlugin;
 
 var allFilterName = [
 	"messageColor",
@@ -15,7 +16,8 @@ var allFilterName = [
 	"durationFooter",
 	"unclosedFilter",
 	"closedMessageColor",
-	"closedSummary"
+	"closedSummary",
+	"mantisPlugin"
 ];
 
 $(function(){
@@ -45,7 +47,6 @@ $(function(){
 
 	});
 });
-
 
 function _chromeStorageItemUpdate(name, value) {
 	chrome.storage.sync.set({

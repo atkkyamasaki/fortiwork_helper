@@ -27,9 +27,12 @@ $(function(){
 // Filter 機能
 
 $(function(){
-	if (unclosedFilter) {
-		_mainFilter(true);
-		_mainFilterExist();		
+
+	if (userAgent.indexOf('chrome') != -1 || userAgent.indexOf('opera') != -1 || userAgent.indexOf('Firefox') != -1) {
+		if (unclosedFilter) {
+			_mainFilter(true);
+			_mainFilterExist();		
+		}
 	}
 });
 

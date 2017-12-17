@@ -22,6 +22,9 @@ if (closedMessageColor == undefined) {
 if (closedSummary == undefined) {
 	var closedSummary = true;
 }
+if (mantisPlugin == undefined) {
+	var mantisPlugin = true;
+}
 
 chrome.storage.sync.set({
 	"messageColor": messageColor,
@@ -31,5 +34,6 @@ chrome.storage.sync.set({
 	"durationFooter": durationFooter,
 	"unclosedFilter": unclosedFilter,
 	"closedMessageColor": closedMessageColor,
-	"closedSummary": closedSummary
+	"closedSummary": closedSummary,
+	"mantisPlugin": mantisPlugin
 });
