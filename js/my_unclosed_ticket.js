@@ -3,7 +3,7 @@ var unclosedFilter = true;
 
 var userAgent = window.navigator.userAgent.toLowerCase();
 
-if (userAgent.indexOf('chrome') != -1 || userAgent.indexOf('opera') != -1) {
+if (isSupported(['chrome', 'opera'])) {
 	chrome.storage.sync.get([
 			"unclosedFilter"
 		], function(items) {
@@ -28,7 +28,7 @@ $(function(){
 
 $(function(){
 
-	if (userAgent.indexOf('chrome') != -1 || userAgent.indexOf('opera') != -1 || userAgent.indexOf('Firefox') != -1) {
+	if (isSupported(['chrome', 'opera', 'firefox'])) {
 		if (unclosedFilter) {
 			_mainFilter(true);
 			_mainFilterExist();		

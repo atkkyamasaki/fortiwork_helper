@@ -4,7 +4,7 @@ var closedSummary = true;
 
 var userAgent = window.navigator.userAgent.toLowerCase();
 
-if (userAgent.indexOf('chrome') != -1 || userAgent.indexOf('opera') != -1) {
+if (isSupported(['chrome', 'opera'])) {
 	chrome.storage.sync.get([
 			"closedMessageColor",
 			"closedSummary"

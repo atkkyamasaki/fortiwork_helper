@@ -7,7 +7,7 @@ var durationFooter = true;
 
 var userAgent = window.navigator.userAgent.toLowerCase();
 
-if (userAgent.indexOf('chrome') != -1 || userAgent.indexOf('opera') != -1) {
+if (isSupported(['chrome', 'opera'])) {
 	chrome.storage.sync.get([
 			"messageColor",
 			"productSummary",
@@ -683,7 +683,7 @@ $(function() {
     	if ($(this).scrollTop() > 200) {
     	    if (topshowFlag == false) {
     	        topshowFlag = true;
-    	        topBtn.stop().animate({'bottom' : '60px'}, 200); 
+    	        topBtn.stop().animate({'bottom' : '64px'}, 200); 
     	    }
     	} else {
     	    if (topshowFlag) {

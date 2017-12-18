@@ -1,7 +1,7 @@
 {
   "name": "FortiWorkHelper",
   "author": "Takefumi Yamasaki",
-  "version": "2.0.0.2",
+  "version": "2.0.0.4",
   "manifest_version": 2,
   "description": "Helper for Forinet Worker",
   "content_scripts": [
@@ -10,6 +10,7 @@
       "js": [
         "vendor/jquery/jquery-3.2.1.min.js",
         "vendor/jquery_confirm/jquery-confirm.min.js",
+        "vendor/judge_support_browser.js",
         "js/edit_ticket.min.js"
         // "js/edit_ticket.js"
       ],
@@ -27,6 +28,7 @@
       "js": [
         "vendor/jquery/jquery-3.2.1.min.js",
         "vendor/jquery_sumoselect/jquery.sumoselect.min.js",
+        "vendor/judge_support_browser.js",
         "js/my_unclosed_ticket.min.js"
         // "js/my_unclosed_ticket.js"
       ],
@@ -42,6 +44,7 @@
       ],
       "js": [
         "vendor/jquery/jquery-3.2.1.min.js",
+        "vendor/judge_support_browser.js",
         "js/browse_ticket.min.js"
         // "js/browse_ticket.js"
       ],
@@ -54,6 +57,7 @@
       "matches": ["https://mantis.fortinet.com/bug_view_page.php?bug_id=*"],
       "js": [
         "vendor/jquery/jquery-3.2.1.min.js",
+        "vendor/judge_support_browser.js",
         "js/mantis_view.min.js"
         // "js/mantis_view.js"
       ],
