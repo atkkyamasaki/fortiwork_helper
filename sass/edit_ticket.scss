@@ -1,6 +1,4 @@
-
-
-$warning_color: #ff9966;
+@import "main";
 
 .plugin_working {
 	border: 1px solid gray;
@@ -20,7 +18,7 @@ $warning_color: #ff9966;
 }
 
 .title_warning {
-	background-color: $warning_color;
+	background-color: #ff9966;
 }
 
 .title_err_msg {
@@ -100,6 +98,7 @@ $warning_color: #ff9966;
 
 /* 付箋用 */
 .post_it {
+    font-family: $font_family;
 	position: fixed;
     right: 0px;
     font-size: 77%;
@@ -161,6 +160,7 @@ $warning_color: #ff9966;
 }
 
 #open_time_footer {
+    font-family: $font_family;
     position: fixed;
     width: 140px;
     right: 20px;
@@ -179,6 +179,7 @@ $warning_color: #ff9966;
 
 /* ページトップへ戻るボタン用 */
 .page_top_bottom {
+    font-family: $font_family;
     position: fixed;
     right: 20px;
     font-size: 77%;

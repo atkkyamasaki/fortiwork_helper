@@ -1,3 +1,5 @@
+@import "main";
+
 .plugin_working {
 	border: 1px solid gray;
     border-radius: 6px;
@@ -42,6 +44,7 @@
 
 /* 付箋用 */
 .post_it {
+    font-family: $font_family;
 	position: fixed;
     right: 0px;
     font-size: 77%;
@@ -83,41 +86,9 @@
 }
 
 
-
-
-/* ページを開いてからの経過時間 */
-#open_time {
-    opacity: 0.8;
-    background: #666;
-    text-decoration: none;
-    color: #fff;
-    width: 100px;
-    text-align: center;
-    padding: 6px 0;
-	margin: 0 0 0 20px;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-
-#open_time_footer {
-    position: fixed;
-    width: 140px;
-    right: 20px;
-    bottom: -8px;
-    font-size: 77%;
-    opacity: 0.8;
-    background: #666;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    padding: 6px 0;
-    margin: 0 0 0 20px;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-
 /* ページトップへ戻るボタン用 */
 .page_top_bottom {
+    font-family: $font_family;
     position: fixed;
     right: 20px;
     font-size: 77%;

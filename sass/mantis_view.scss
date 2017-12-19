@@ -1,5 +1,8 @@
+@import "main";
+
 /* 付箋用 */
 .post_it {
+    font-family: $font_family;
 	position: fixed;
     right: 0px;
     font-size: 77%;
@@ -47,6 +50,7 @@
 
 /* ページトップへ戻るボタン用 */
 .page_move {
+    font-family: $font_family;
     position: fixed;
     right: 20px;
     bottom: 60px;

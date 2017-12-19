@@ -122,7 +122,7 @@ $(function() {
     	if ($(this).scrollTop() > 200) {
     	    if (topshowFlag == false) {
     	        topshowFlag = true;
-    	        topBtn.stop().animate({'bottom' : '60px'}, 200); 
+    	        topBtn.stop().animate({'bottom' : '62px'}, 200); 
     	    }
     	} else {
     	    if (topshowFlag) {
