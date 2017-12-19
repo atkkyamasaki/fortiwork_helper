@@ -1,7 +1,7 @@
 /**
  *  ブラウザ名を取得
  *  
- *  @return     ブラウザ名(ie6、ie7、ie8、ie9、ie10、ie11、chrome、safari、opera、firefox、unknown)
+ *  @return     ブラウザ名(ie6、ie7、ie8、ie9、ie10、ie11、edge、chrome、safari、opera、firefox、unknown)
  *
  */
 var getBrowser = function(){
@@ -25,6 +25,8 @@ var getBrowser = function(){
         }
     }else if(ua.indexOf('trident/7') != -1){
         name = 'ie11';
+    }else if (ua.indexOf('edge') != -1){
+        name = 'edge';
     }else if (ua.indexOf('chrome') != -1){
         name = 'chrome';
     }else if (ua.indexOf('safari') != -1){
@@ -41,7 +43,7 @@ var getBrowser = function(){
 /**
  *  対応ブラウザかどうか判定
  *  
- *  @param  browsers    対応ブラウザ名を配列で渡す(ie6、ie7、ie8、ie9、ie10、ie11、chrome、safari、opera、firefox)
+ *  @param  browsers    対応ブラウザ名を配列で渡す(ie6、ie7、ie8、ie9、ie10、ie11、edge、chrome、safari、opera、firefox)
  *  @return             サポートしてるかどうかをtrue/falseで返す
  *
  */
