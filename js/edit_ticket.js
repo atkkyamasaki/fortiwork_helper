@@ -61,6 +61,7 @@ var onlyEmailAttach = '#ctl00_MainContent_UC_AddComment_CB_AttachToEmailOnly';
 var emailFrom = '#ctl00_MainContent_UC_AddComment_TB_EmailFrom';
 var emailTo = '#ctl00_MainContent_UC_AddComment_TB_EmailTo';
 var emailCc = '#ctl00_MainContent_UC_AddComment_TB_EmailCC';
+var emailBcc = '#ctl00_MainContent_UC_AddComment_TB_EmailBCC';
 
 var submitButton = "#ctl00_MainContent_B_TicketSubmit";
 var submitBackButton = "#ctl00_MainContent_B_SubmitAndBack";
@@ -80,7 +81,7 @@ $(function(){
 
 $(function(){
 	_emailCheckRemove();
-	$(emailCc).val('support_jp@fortinet.com');
+	$(emailBcc).val('support_jp@fortinet.com');
 	_radioStatusChange('disable');
 });
 
@@ -482,7 +483,7 @@ function _createConfirmMsg(type) {
 		'<div style="color: lightgreen; font-size:1.5em">' + '=== Email ===' + '</div>' + 
 		'email From  :  ' + $(emailFrom).val() + '<br>' + 
 		'email To  :  ' + $(emailTo).val() + '<br>' +
-		'email Cc  :  ' + $(emailCc).val() + '<br><br>' +
+		'email Bcc  :  ' + $(emailBcc).val() + '<br><br>' +
 		'<div style="color: lightgreen; font-size:1.5em">' + '=== Action ===' + '</div>' + 
 		action + '<br><br>';
 
